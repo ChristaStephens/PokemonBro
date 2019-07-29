@@ -1,4 +1,5 @@
 # Pokemon
+Creating a Pokemon app to play around with Adobe Illustrator (created assets using AI) and to consume API's.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.3.
 

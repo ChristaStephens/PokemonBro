@@ -7,6 +7,10 @@ import { NavComponent } from './nav/nav.component';
 import { TrainerComponent } from './trainer/trainer.component';
 import { OpponentComponent } from './opponent/opponent.component';
 import { ResultComponent } from './result/result.component';
+// helps to make rest api calls - http client. done in the root module
+//commonly shared services get loaded/imported in the root folders
+import { HttpClientModule} from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -18,6 +22,7 @@ import { ResultComponent } from './result/result.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-nav',
@@ -8,10 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class NavComponent implements OnInit {
     // type script
     appTitle: string = 'Pokemon Bro';
-    constructor() { }
+    constructor(private dataService: DataService) { }
 
-
+  //first things that runs after page loads
   ngOnInit() {
+    this.dataService.getPokemon()
   }
 
 }

@@ -10,6 +10,7 @@ import { ResultComponent } from './result/result.component';
 // helps to make rest api calls - http client. done in the root module
 //commonly shared services get loaded/imported in the root folders
 import { HttpClientModule} from '@angular/common/http';
+import {ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { HttpClientModule} from '@angular/common/http';
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
